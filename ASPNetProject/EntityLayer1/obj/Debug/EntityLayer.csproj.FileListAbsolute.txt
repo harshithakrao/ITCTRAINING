@@ -1,0 +1,5 @@
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\EntityLayer1\bin\Debug\EntityLayer1.dll
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\EntityLayer1\bin\Debug\EntityLayer1.pdb
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\EntityLayer1\obj\Debug\EntityLayer1.dll
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\EntityLayer1\obj\Debug\EntityLayer1.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\ASPNetProject\EntityLayer1\obj\Debug\EntityLayer.csprojResolveAssemblyReference.cache

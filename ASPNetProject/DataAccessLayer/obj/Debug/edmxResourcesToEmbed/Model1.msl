@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="masterEntities">
+    <EntitySetMapping Name="Logininfoes">
+      <EntityTypeMapping TypeName="masterModel.Logininfo">
+        <MappingFragment StoreEntitySet="Logininfo">
+          <ScalarProperty Name="mobno" ColumnName="mobno" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="courseinfoes">
+      <EntityTypeMapping TypeName="masterModel.courseinfo">
+        <MappingFragment StoreEntitySet="courseinfo">
+          <ScalarProperty Name="coursename" ColumnName="coursename" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registrations">
+      <EntityTypeMapping TypeName="masterModel.Registration">
+        <MappingFragment StoreEntitySet="Registration">
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+          <ScalarProperty Name="Hobbies" ColumnName="Hobbies" />
+          <ScalarProperty Name="SkillSets" ColumnName="SkillSets" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RegID" ColumnName="RegID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Studentinfoes">
+      <EntityTypeMapping TypeName="masterModel.Studentinfo">
+        <MappingFragment StoreEntitySet="Studentinfo">
+          <ScalarProperty Name="courseid" ColumnName="courseid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="rollno" ColumnName="rollno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="depts">
+      <EntityTypeMapping TypeName="masterModel.dept">
+        <MappingFragment StoreEntitySet="dept">
+          <ScalarProperty Name="loc" ColumnName="loc" />
+          <ScalarProperty Name="dname" ColumnName="dname" />
+          <ScalarProperty Name="deptno" ColumnName="deptno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="emps">
+      <EntityTypeMapping TypeName="masterModel.emp">
+        <MappingFragment StoreEntitySet="emp">
+          <ScalarProperty Name="DEPTNO" ColumnName="DEPTNO" />
+          <ScalarProperty Name="COMM" ColumnName="COMM" />
+          <ScalarProperty Name="SAL" ColumnName="SAL" />
+          <ScalarProperty Name="HIREDATE" ColumnName="HIREDATE" />
+          <ScalarProperty Name="MGR" ColumnName="MGR" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+          <ScalarProperty Name="ENAME" ColumnName="ENAME" />
+          <ScalarProperty Name="EMPNO" ColumnName="EMPNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

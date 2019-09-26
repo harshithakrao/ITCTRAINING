@@ -1,0 +1,9 @@
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\bin\Debug\BusinessAccessLayer1.dll
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\bin\Debug\BusinessAccessLayer1.pdb
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\bin\Debug\DataAccessLayer.dll
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\bin\Debug\EntityLayer1.dll
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\bin\Debug\DataAccessLayer.pdb
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\bin\Debug\EntityLayer1.pdb
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\obj\Debug\BusinessAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\obj\Debug\BusinessAccessLayer1.dll
+C:\Users\user\documents\visual studio 2010\Projects\ASPNetProject\BusinessAccessLayer1\obj\Debug\BusinessAccessLayer1.pdb

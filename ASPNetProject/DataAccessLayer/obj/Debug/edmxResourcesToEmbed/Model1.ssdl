@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="masterModelStoreContainer">
+    <EntitySet Name="courseinfo" EntityType="masterModel.Store.courseinfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="dept" EntityType="masterModel.Store.dept" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="emp" EntityType="masterModel.Store.emp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Logininfo" EntityType="masterModel.Store.Logininfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Registration" EntityType="masterModel.Store.Registration" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Studentinfo" EntityType="masterModel.Store.Studentinfo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__emp__DEPTNO__5E1FF51F" Association="masterModel.Store.FK__emp__DEPTNO__5E1FF51F">
+      <End Role="dept" EntitySet="dept" />
+      <End Role="emp" EntitySet="emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Studentin__cours__66B53B20" Association="masterModel.Store.FK__Studentin__cours__66B53B20">
+      <End Role="courseinfo" EntitySet="courseinfo" />
+      <End Role="Studentinfo" EntitySet="Studentinfo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="courseinfo">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="coursename" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="dept">
+    <Key>
+      <PropertyRef Name="deptno" />
+    </Key>
+    <Property Name="deptno" Type="int" Nullable="false" />
+    <Property Name="dname" Type="varchar" MaxLength="20" />
+    <Property Name="loc" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="emp">
+    <Key>
+      <PropertyRef Name="EMPNO" />
+    </Key>
+    <Property Name="EMPNO" Type="int" Nullable="false" />
+    <Property Name="ENAME" Type="varchar" MaxLength="10" />
+    <Property Name="JOB" Type="varchar" MaxLength="9" />
+    <Property Name="MGR" Type="int" />
+    <Property Name="HIREDATE" Type="datetime" />
+    <Property Name="SAL" Type="money" />
+    <Property Name="COMM" Type="money" />
+    <Property Name="DEPTNO" Type="int" />
+  </EntityType>
+  <EntityType Name="Logininfo">
+    <Key>
+      <PropertyRef Name="mobno" />
+    </Key>
+    <Property Name="mobno" Type="bigint" Nullable="false" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Registration">
+    <Key>
+      <PropertyRef Name="RegID" />
+    </Key>
+    <Property Name="RegID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Gender" Type="varchar" MaxLength="6" />
+    <Property Name="Nationality" Type="varchar" MaxLength="20" />
+    <Property Name="Qualification" Type="varchar" MaxLength="50" />
+    <Property Name="SkillSets" Type="varchar" MaxLength="50" />
+    <Property Name="Hobbies" Type="varchar" MaxLength="75" />
+    <Property Name="DOJ" Type="datetime" />
+    <Property Name="Salary" Type="money" />
+  </EntityType>
+  <EntityType Name="Studentinfo">
+    <Key>
+      <PropertyRef Name="rollno" />
+    </Key>
+    <Property Name="rollno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="courseid" Type="int" />
+  </EntityType>
+  <Association Name="FK__emp__DEPTNO__5E1FF51F">
+    <End Role="dept" Type="masterModel.Store.dept" Multiplicity="0..1" />
+    <End Role="emp" Type="masterModel.Store.emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dept">
+        <PropertyRef Name="deptno" />
+      </Principal>
+      <Dependent Role="emp">
+        <PropertyRef Name="DEPTNO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Studentin__cours__66B53B20">
+    <End Role="courseinfo" Type="masterModel.Store.courseinfo" Multiplicity="0..1" />
+    <End Role="Studentinfo" Type="masterModel.Store.Studentinfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="courseinfo">
+        <PropertyRef Name="cid" />
+      </Principal>
+      <Dependent Role="Studentinfo">
+        <PropertyRef Name="courseid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
